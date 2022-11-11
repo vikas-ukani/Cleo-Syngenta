@@ -1,0 +1,26 @@
+@import '../_variables';
+
+#search {
+    display: none;
+}
+
+#tabs {
+    a {
+        font-size: 80%;
+    }
+}
+
+.dropdown-menus {
+    a { font-size: 80%; }
+}
+
+.btn-padded {
+    padding: .1em .3em;
+    span {
+        font-size: .9em !important;
+    }
+}
+
+.close-filter {
+    padding: 0.8em;
+}

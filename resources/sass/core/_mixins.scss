@@ -1,0 +1,20 @@
+
+@mixin no-select {
+	cursor: default;
+	-webkit-touch-callout: none;
+  	-webkit-user-select: none;
+  	-khtml-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+}
+
+@mixin btn-icon {
+	height: 100%;
+	min-height: 68px;
+	padding: $l-panel-pad;
+
+	img {
+		display: block;
+	}
+}

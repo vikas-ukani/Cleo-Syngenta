@@ -1,0 +1,89 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2.5",
+        "benjacho/belongs-to-many-field": "^1.2",
+        "benjaminhirsch/nova-slug-field": "^1.2",
+        "doctrine/dbal": "^2.9",
+        "ebess/advanced-nova-media-library": "^3.1",
+        "fideloper/proxy": "^4.0",
+        "laravel/framework": "^7.0",
+        "laravel/nova": "^3.0",
+        "laravel/passport": "^7.5",
+        "laravel/tinker": "^2.0",
+        "michielkempen/nova-order-field": "^2.0",
+        "sentry/sentry-laravel": "^1.7.0",
+        "spatie/eloquent-sortable": "^3.7",
+        "spatie/laravel-medialibrary": "^8.0",
+        "syngenta/tymirium": "*",
+        "whitecube/nova-flexible-content": "^0.1.15",
+        "syngenta/data-import": "*"
+    },
+    "require-dev": {
+        "facade/ignition": "^2.0",
+        "fzaninotto/faker": "^1.4",
+        "laravel/ui": "^2.0",
+        "mockery/mockery": "^1.0",
+        "nunomaduro/collision": "^4.1",
+        "phpunit/phpunit": "^8.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        },
+        {
+            "type": "path",
+            "url": "./nova-components/Tymirium"
+        },
+        {
+            "type": "path",
+            "url": "./nova-components/DataImport"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "core/vars";
+@import "core/base";
+@import "components/header";
+@import "components/navigation";
+
+// Add padding to bottom of screen on mobile,
+// to allow space to interact with the fixed background map
+@media screen and (max-width: $mq-tablet-max) {
+    .map-container + div {
+        padding-bottom: 90vh;
+    }
+}

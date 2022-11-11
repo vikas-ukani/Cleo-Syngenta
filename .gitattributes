@@ -1,0 +1,12 @@
+CHANGELOG.md export-ignore
+
+* text=auto
+* text eol=lf
+*.zip binary
+*.css linguist-vendored
+*.scss linguist-vendored
+*.js linguist-vendored
+
+# GitHub Linguist Override
+.yarn/* linguist-vendored
+.pnp.js linguist-vendored

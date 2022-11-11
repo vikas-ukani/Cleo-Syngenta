@@ -1,0 +1,45 @@
+// FONTS
+$f-title: Roboto, sans-serif;
+$f-body: Roboto, sans-serif;
+
+// COLOURS
+$c-body: #606266;
+$c-headings: #444;
+
+$c-border: rgba(#c2c2c2, 0.5);
+$c-grey: #8D8D8F;
+$c-grey-dark: #606266;
+$c-grey-light: #C3C7C5;
+$c-button-grey: #f0f2f1;
+$c-bg-grey: #f0f0f0;
+$c-black: #000;
+$c-orange: #f58700;
+
+$c-risk-high: #ff8f7d;
+$c-risk-mid-high: #ffb670;
+$c-risk-mid: #ffe674;
+$c-risk-low: #bfe485;
+
+$c-brand-a: #149739;
+$c-brand-a-grad: linear-gradient(90deg, #3EB34C, #39AD60);
+$c-brand-b-grad: linear-gradient(90deg, #9FC441, #92C240);
+$c-main-green: #006950;
+
+// LAYOUT
+$l-max-width: 1400px;
+$l-gutter-width: 20px;
+$l-body-pad: 20px;
+$l-panel-pad: 15px 20px;
+$l-input-pad-top: 0.75em;
+$l-input-pad-left: 1em;
+$l-input-pad: $l-input-pad-top $l-input-pad-left;
+
+// Styles
+$s-border-radius: 4px;
+
+// MEDIA QUERIES
+$mq-mobile-max: 599px;
+$mq-tablet-min: 600px;
+$mq-tablet-max: 1023px;
+$mq-desktop-min: 1024px;
+$mq-desktop-large-min: 1200px;

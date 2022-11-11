@@ -1,0 +1,43 @@
+
+::-webkit-input-placeholder {
+
+}
+:-ms-input-placeholder {
+
+}
+
+label {
+	@include no-select;
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	margin: 0 0 1em;
+	padding: $l-input-pad;
+	font-size: 0.875rem; 	// 14px
+	border: 1px solid $c-border;
+
+	// IOS devices
+	@supports (-webkit-overflow-scrolling: touch) {
+		@media screen and (max-width: $mq-mobile-max) {
+			font-size: 16px;
+		}
+	}
+
+	&:focus {
+		outline: 0;
+	}
+
+
+	&[type="submit"] {
+		width: auto;
+		display: inline-block;
+	}
+}
+
+select {
+	font-size: 16px;
+	background-color: white;
+}

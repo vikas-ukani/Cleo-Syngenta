@@ -1,0 +1,110 @@
+
+body {
+    font: 200 100%/1.5 $f-body;
+    color: $c-body;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin: 0 0 0.4em;
+
+    font-size: 1rem;
+    font-family: $f-title;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+h1,
+.h1 {
+    font-size: 1.625rem;        // 26px
+    color: $c-brand-a;
+
+    @media (min-width: $mq-tablet-min) {
+
+    }
+
+    @media (min-width: $mq-desktop-min) {
+
+    }
+}
+h2,
+.h2 {
+    @media (min-width: $mq-tablet-min) {
+
+    }
+
+    @media (min-width: $mq-desktop-min) {
+
+    }
+}
+h3,
+.h3 {
+    @media (min-width: $mq-tablet-min) {
+
+    }
+
+    @media (min-width: $mq-desktop-min) {
+
+    }
+}
+h4,
+.h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: $c-grey-dark;
+
+    @media (min-width: $mq-tablet-min) {
+
+    }
+
+    @media (min-width: $mq-desktop-min) {
+
+    }
+}
+h5,
+.h5 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+
+    @media (min-width: $mq-tablet-min) {
+
+    }
+
+    @media (min-width: $mq-desktop-min) {
+
+    }
+}
+h6,
+.h6 {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    color: $c-grey;
+
+    @media (min-width: $mq-tablet-min) {
+
+    }
+
+    @media (min-width: $mq-desktop-min) {
+
+    }
+}
+
+p,
+address,
+table,
+li {
+    @media (min-width: $mq-tablet-min) {
+
+    }
+
+    @media (min-width: $mq-desktop-min) {
+
+    }
+}

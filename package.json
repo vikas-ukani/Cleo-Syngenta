@@ -1,0 +1,52 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "build-belongs-to-many-select": "cd nova-components/BelongsToManySelect && npm run dev",
+        "build-belongs-to-many-select-prod": "cd nova-components/BelongsToManySelect && npm run prod",
+        "build-data-import": "cd nova-components/DataImport && npm run dev",
+        "build-data-import-prod": "cd nova-components/DataImport && npm run prod"
+    },
+    "devDependencies": {
+        "axios": "^0.19.2",
+        "cross-env": "^5.1",
+        "es6-promise": "^4.2.8",
+        "laravel-mix": "^4.0.7",
+        "lodash": "^4.17.19",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.26.5",
+        "sass-loader": "7.*",
+        "tailwindcss": "^1.6.0",
+        "vue": "^2.6.11",
+        "vue-template-compiler": "^2.6.11",
+        "vuex": "^3.3.0"
+    },
+    "dependencies": {
+        "@amcharts/amcharts4": "^4.9.19",
+        "@amcharts/amcharts4-geodata": "^4.1.14",
+        "@popperjs/core": "^2.4.0",
+        "@sentry/browser": "^5.15.5",
+        "@sentry/integrations": "^5.15.5",
+        "@svg-maps/world": "^1.0.1",
+        "d3": "^6.2.0",
+        "d3-queue": "^3.0.7",
+        "flag-icon-css": "^3.4.6",
+        "localforage": "^1.7.3",
+        "mapbox-gl": "^1.11.1",
+        "mix-tailwindcss": "^1.2.0",
+        "moment": "^2.27.0",
+        "topojson-client": "^3.1.0",
+        "vue-google-charts": "^0.3.3",
+        "vue-lang-code-flags": "^1.0.7",
+        "vue-popperjs": "^2.3.0",
+        "vue-router": "^3.1.6",
+        "vue-svg-map": "^1.2.0",
+        "vuex-persist": "^2.2.0"
+    }
+}

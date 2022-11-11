@@ -1,0 +1,18 @@
+
+.u--no-widows {
+	white-space: nowrap;
+}
+
+.u--center {
+	text-align: center;
+}
+
+.u--uppercase {
+	text-transform: uppercase;
+}
+
+.u--no-transitions {
+	* {
+		transition: 0s 0s !important;
+	}
+}

@@ -1,0 +1,62 @@
+.panel-header {
+    z-index: 2;
+
+    @media screen and (min-width: $mq-desktop-min) {
+        width: 100vw;
+        height: 30px;
+        background: #fff;
+        left: auto;
+        right: auto;
+        top: 0;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__home {
+        margin: -6px 0 0 0;
+
+        h1 {
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: $c-main-green
+        }
+
+        .home-link {
+
+            img {
+                fill: $c-black;
+                width: 18px;
+                margin: 0px 4px 0 0;
+            }
+
+            font-weight: bold;
+            font-size: .9rem;
+            color: $c-black;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: flex-end;
+        margin-top: -4px;
+
+        img {
+            height: 51px;
+        }
+    }
+
+    &__toggle {
+        width: 20px;
+        cursor: pointer;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+}
